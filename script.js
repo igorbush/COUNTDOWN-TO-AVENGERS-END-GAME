@@ -8,7 +8,6 @@ window.onload = function() {
   let final = new Date(2019, 3, 30, 11, 39, 59, 0);
   function getRandomImage() {
     let index = Math.floor(Math.random() * 6);
-    console.log(index);
     return arr[index].src;
   }
   setInterval(function() {
@@ -29,6 +28,6 @@ window.onload = function() {
   }, 1000);
   setInterval(function() {
     document.querySelector('body').style.backgroundImage = "url("+getRandomImage()+")";
-  }, 1000);
+  }, 6000);
 }
  
